@@ -35,7 +35,7 @@ cd MathProject
 . venv/bin/activate
 ```
 
-You can check to make sure your virtual enviroment is working by looking at your command line. If youre virtual environment is running, you should see "(venv)" at the start of the your command line. 
+You can check to make sure your virtual enviroment is working by looking at your command line. If youre virtual environment is running, you should see "(venv)" at the start of the your command line as below. 
 
 ```shell
 (venv) MyName-MPB:fprime-math-component-tutorial myname$ 
