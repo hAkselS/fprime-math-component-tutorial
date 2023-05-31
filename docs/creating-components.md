@@ -59,7 +59,7 @@ Now that you have created the component, you can implement the component behavio
 
 In Components/MathSender, open MathSender.fpp and entirely replace its contents with the following. (Note: this is an old format of fpp files but the content is entirely correct. @TOTO).
 
-```
+```fpp
 module MathModule {
 
   @ Component for sending a math operation
