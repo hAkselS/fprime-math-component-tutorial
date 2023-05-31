@@ -10,7 +10,7 @@ mkdir Components
 cd Components 
 ```
 
-The MathSender is going to be an active component which will send receive parameters, send parameters, log events, and send telemetry. With this is mind, use the following command to create the MathSender component. 
+The MathSender is going to be an active component which will receive parameters, send parameters, log events, and send telemetry. With this is mind, use the following command to create the MathSender component. 
 
 ```shell
 # In: Components
@@ -51,7 +51,7 @@ Generate implementation files (yes/no)? yes
 Before doing anything to the files you have just generated, try building. 
 
 ```shell 
-# In: Components
+# In: MathSender
 fprime-util build
 ```
 
@@ -154,10 +154,10 @@ module MathModule {
 
 More about this component @TODO 
 
-Now you have written the F' code for the component, but the cpp and hpp files do not yet reflect the changes you have made to the fpp file. To get the cpp and hpp to reflect the specs you have set fourth in the fpp, you need to use F' imlpement as done below. 
+Now you have written the F' code for the component, but the cpp and hpp files do not yet reflect the changes you have made to the fpp file. To get the cpp and hpp to reflect the specs you have set fourth in the fpp, you need to use F' implement as shown below: 
 
 ```shell
-# In: Components
+# In: MathSender
 fprime-util impl 
 ```
 
