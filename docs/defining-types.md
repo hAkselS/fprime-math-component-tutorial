@@ -1,6 +1,6 @@
 # Defining Types 
 
-## Starting Off 
+## Setup
 
 In the context of the math component tutorial, types define the mathmatic operations that can be performed on the opperands.
 
@@ -19,7 +19,7 @@ The types are defined in an fpp (F prime prime) file that you will create using 
 touch MathTypes.fpp
 ```
 
-## Implementing to the Types 
+## Implementing the Types 
 
 Use your favorite text editor, visual studios, nano, vim, etc..., and add the following to MathTypes.fpp.
 
