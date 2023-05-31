@@ -4,12 +4,39 @@
 
 An F´ project ties to a specific version of tools to work with F´. In order to create this project and install the correct version of tools, an initial bootstrap version of F´ tools must be installed. This is accomplished with the following command:
 
-'''python 
+```shell
 pip install fprime-tools
-'''
+```
 
 ## Creating a New F' Project 
 
-Now that to tools are installed a new F´ project should be created. An F´ project internalizes the version of F´ that the project will build upon and provides the user the basic setup for creating, building, and testing components.
+Now that the tools are installed, you can create the project where the math components will reside. 
 
-In order to make a new project, run the following command and answer the questions as indicated below:
+To make a new project, run the following command and answer the questions as indicated below:
+
+```shell
+fprime-util new --project 
+```
+This command will require you to answer some questions. Answer as indicated below:
+
+```
+project_name [MyProject]: MathProject
+fprime_branch_or_tag [devel]: devel
+Select install_venv:
+1 - yes
+2 - no
+Choose from 1, 2 [1]: 1
+```
+
+To start working on the new project two things need to happen. First you need to enter your project directory. Second, you need to start the python virtual environment that was created with your project. Use the two commands below to accomploish both these tasks.
+
+```shell 
+cd MathProject
+. venv/bin/activate
+```
+
+You can check to make sure your virtual enviroment is working by looking at your command line. If youre virtual environment is running, you should see "(venv)" at the start of the your command line. 
+
+```shell
+(venv) MyName-MPB:fprime-math-component-tutorial myname$ 
+```
