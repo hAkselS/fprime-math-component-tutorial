@@ -58,7 +58,7 @@ void MathReceiver ::
 
 This code does the following:
 
-   1. Compute an initial result based on the input values and the requested operation.
+    1. Compute an initial result based on the input values and the requested operation.
 
    2. Get the value of the factor parameter. Check that the value is a valid value from the parameter database or a default parameter value.
 
