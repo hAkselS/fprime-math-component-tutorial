@@ -42,3 +42,5 @@ You can check to make sure your virtual enviroment is working by looking at your
 ```
 
 ## Summary 
+
+In this seciton you have downnloaded F' tool which enable F' development. You created a new F' project which you develop further in this tutorial. You started running a virtual enviroment, which should be running whenever you are workong on this project.
