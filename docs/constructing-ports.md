@@ -2,18 +2,18 @@
 
 ## Setup 
 
-Start by making a directory will the ports will be defined. In this tutorial, the directory will be named "MyPorts". 
+Start by making a directory will the ports will be defined. In this tutorial, the directory will be named "Ports". 
 
 ```shell 
 # In: MathProject
-mkdir MyPorts 
-cd MyPorts
+mkdir Ports 
+cd Ports
 ```
 
-While in "MyPorts", create an empty fpp file called MathPorts.fpp, this is where the ports will be defined.
+While in "Ports", create an empty fpp file called MathPorts.fpp, this is where the ports will be defined.
 
 ```shell 
-# In: MyPorts
+# In: Ports
 touch MathPorts.fpp
 ```
 
@@ -40,10 +40,10 @@ Notice how we have used the MathModule again while defining the ports. Here we h
 
 ## Adding to the Build 
 
-Create a CMakeLists.txt file in MyTypes. 
+Create a CMakeLists.txt file in Types. 
 
 ```shell 
-# In: MyTypes
+# In: Types
 touch CMakeLists.txt 
 ```
 
@@ -57,19 +57,19 @@ set(SOURCE_FILES
 register_fprime_module()
 ```
 
-Now modifiy add the following to project.cmake. Remember that project.cmake is in MathProject, not MyPorts. 
+Now modifiy add the following to project.cmake. Remember that project.cmake is in MathProject, not Ports. 
 
 ```cmake 
-add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/MyPorts/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Ports/")
 ```
 
-MyPorts should build without any issues. Use the following build.
+Ports should build without any issues. Use the following build.
 
 ```shell
-# In: MyPorts
+# In: Ports
 fprime-util build
 ```
 
 ## Summary 
 
-In this section of the turtorial you created a MyPorts directory where you created two ports in MathPorts.fpp. Please note that these ports have not yet been connected to anything, that will happen later in the tutorial. Additionally to creating two ports, you added the ports directory into the project build and build MyPorts. 
+In this section of the turtorial you created a Ports directory where you created two ports in MathPorts.fpp. Please note that these ports have not yet been connected to anything, that will happen later in the tutorial. Additionally to creating two ports, you added the ports directory into the project build and build Ports. 
