@@ -4,7 +4,7 @@
 
 An F´ project ties to a specific version of tools to work with F´. In order to create this project and install the correct version of tools, an initial bootstrap version of F´ tools must be installed. This is accomplished with the following command:
 
-'''shell 
+'''python 
 pip install fprime-tools
 '''
 
