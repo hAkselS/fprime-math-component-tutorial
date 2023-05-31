@@ -178,3 +178,6 @@ Build MathSender to make sure everything worked as expecred.
 fprime-util build 
 ```
  
+## Summary 
+
+In this section you have created a new, active component stub and filled in the component's fpp file. You also generated the cpp and hpp files for the fpp file you edited. You are now ready to edit the cpp file to implement the MathSender's behavior. 
