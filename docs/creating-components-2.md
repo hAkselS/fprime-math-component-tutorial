@@ -6,26 +6,10 @@
 Edit the MathSender.cpp to implement the component behavior. Use a text editor to make the following edits to MathSender.cpp.
 
 
-Fill in the DO_MATH command handler: You should see a stub handler for the DO_MATH command that looks like this:
-
-```cpp
-void MathSender ::
-  DO_MATH_cmdHandler(
-      const FwOpcodeType opCode,
-      const U32 cmdSeq,
-      F32 val1,
-      MathOp op,
-      F32 val2
-  )
-{
-  // TODO
-  this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
-}
-```
-
 The handler DO_MATH_handler is called when the MathSender component receives a DO_MATH command. This handler overrides the corresponding pure virtual function in the auto-generated base class. Fill in the handler so that it looks like this:
 
 ```cpp
+// In: MathSender.cpp
 void MathSender ::
   DO_MATH_cmdHandler(
       const FwOpcodeType opCode,
