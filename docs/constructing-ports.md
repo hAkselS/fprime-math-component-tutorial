@@ -50,7 +50,6 @@ touch CMakeLists.txt
 Add the following to the CMakeLists.txt. 
 
 ```cmake
-# In: MathProject/project.cmake
 set(SOURCE_FILES
   "${CMAKE_CURRENT_LIST_DIR}/MathPorts.fpp"
 )
@@ -61,6 +60,7 @@ register_fprime_module()
 Now modifiy add the following to project.cmake. Remember that project.cmake is in MathProject, not Ports. 
 
 ```cmake 
+# In: MathProject/project.cmake
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Ports/")
 ```
 
