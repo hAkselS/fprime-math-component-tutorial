@@ -70,6 +70,7 @@ Types directory should now build without any issues. Test the build with the fol
 
 ```shell 
 # In: Types 
+fprime-util generate
 fprime-util build 
 ```
 
