@@ -44,12 +44,13 @@ Create a CMakeLists.txt file in Ports.
 
 ```shell 
 # In: Ports
-touch CMakeLists.txt 
+touch CMakeLists.txt
 ```
 
 Add the following to the CMakeLists.txt. 
 
 ```cmake
+# In: MathProject/project.cmake
 set(SOURCE_FILES
   "${CMAKE_CURRENT_LIST_DIR}/MathPorts.fpp"
 )
