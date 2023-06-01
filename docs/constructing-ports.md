@@ -6,7 +6,7 @@ Start by making a directory will the ports will be defined. In this tutorial, th
 
 ```shell 
 # In: MathProject
-mkdir Ports 
+mkdir -p Ports 
 cd Ports
 ```
 
@@ -40,10 +40,10 @@ Notice how we have used the MathModule again while defining the ports. Here we h
 
 ## Adding to the Build 
 
-Create a CMakeLists.txt file in Types. 
+Create a CMakeLists.txt file in Ports. 
 
 ```shell 
-# In: Types
+# In: Ports
 touch CMakeLists.txt 
 ```
 
