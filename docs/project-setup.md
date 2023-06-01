@@ -17,7 +17,7 @@ To make a new project, run the following command and answer the questions as ind
 ```shell
 fprime-util new --project 
 ```
-This command will require you to answer some questions. Answer as indicated below:
+This command will require you to answer some questions. Answer as indicated below (use the default venv_isntall_path):
 
 ```
 project_name [MyProject]: MathProject
@@ -26,6 +26,7 @@ Select install_venv:
 1 - yes
 2 - no
 Choose from 1, 2 [1]: 1
+venv_install_path [./venv]: 
 ```
 
 To start working on the new project two things need to happen. First you need to enter your project directory. Second, you need to start the python virtual environment that was created with your project. Use the two commands below to accomploish both these tasks.
