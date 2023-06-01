@@ -63,7 +63,6 @@ Edit "project.cmake", located in /MathProject, and make sure to add the followin
 
 ```cmake 
 # In: MathProject/project.cmake
-# Add in the types 
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Types/")
 ```
 
