@@ -62,6 +62,7 @@ register_fprime_module()
 Edit "project.cmake", located in /MathProject, and make sure to add the following lines. 
 
 ```cmake 
+# In: MathProject/project.cmake
 # Add in the types 
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Types/")
 ```
