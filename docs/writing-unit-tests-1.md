@@ -1,6 +1,6 @@
 # Writing Unit Tests
 
-## Part 1: setting up the test
+## Part 1: writing a basic unit test
 
 In Components/MathSender, create a directory called UnitTests 
 
@@ -152,4 +152,8 @@ Run the test you have written. Make sure to execute the following in ```MathSend
 # In: MathSender
 fprime-util check 
 ``` 
+
+## Summary 
+
+In this section you have created a unit test by writing and calling on a helper function. 
 
