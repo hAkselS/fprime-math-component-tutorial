@@ -24,7 +24,6 @@ Modifying the code: You will need to do the following:
 ```cpp
 STest::Random::seed();
 ```
-    STest::Random::seed();
 
 Recompile and rerun the tests. Now go to MathProject/build-fprime-automatic-native-ut/Components/MathSender and inspect the file ```seed-history```. This file is a log of random seed values. Each line represents the seed used in the corresponding run.
 
@@ -36,5 +35,5 @@ Try the following:
 
    2. In Components/MathSender, re-run the unit tests a few times.
 
-   3. Inspect MathProject/build-fprime-automatic-native-ut/Components/MathSender/seed-history. You should see that the value S was used in the runs you just did (corresponding to the last few entries in seed-history).
+   3. Inspect ```MathProject/build-fprime-automatic-native-ut/Components/MathSender/seed-history```. You should see that the value S was used in the runs you just did (corresponding to the last few entries in seed-history).
 
