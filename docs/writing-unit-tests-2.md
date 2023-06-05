@@ -15,3 +15,4 @@ Modifying the code: You will need to do the following:
    set(UT_MOD_DEPS STest)
    ```
 
+    This line tells the build system to make the unit test build depend on the STest build module.
