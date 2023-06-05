@@ -34,7 +34,7 @@ void MathReceiver ::
         default:
             FW_ASSERT(0, op.e);
             break;
-    }
+    }//end switch 
 
     // Get the factor value
     Fw::ParamValid valid;
@@ -54,7 +54,7 @@ void MathReceiver ::
     // Emit result
     this->mathResultOut_out(0, res);
 
-}
+}//end MathOpIn_handler 
 ```
 
 This code does the following:
@@ -74,6 +74,7 @@ Note that in step 1, op is an enum (a C++ class type), and op.e is the correspon
 Fill in the schedIn handler: In MathReceiver.cpp, complete the implementation of schedIn_handler so that it looks like this:
 
 ```cpp
+// In: MathReceiver.cpp
 void MathReceiver ::
   schedIn_handler(
       const NATIVE_INT_TYPE portNum,
@@ -92,6 +93,7 @@ This code dispatches all the messages on the queue. Note that for a queued compo
 Fill in the CLEAR_EVENT_THROTTLE command handler: In MathReceiver.cpp, complete the implementation of CLEAR_EVENT_THROTTLE_cmdHandler so that it looks like this:
 
 ```cpp
+// In: MathReceiver.cpp
 void MathReceiver ::
   CLEAR_EVENT_THROTTLE_cmdHandler(
       const FwOpcodeType opCode,
@@ -109,9 +111,10 @@ void MathReceiver ::
 
 The call to log_ACTIVITY_HI_FACTOR_UPDATED_ThrottleClear clears the throttling of the FACTOR_UPDATED event. The next two lines send a notification event and send a command response.
 
-Add a parameterUpdated function: Add the following function to MathReceiver.cpp. You will need to add the corresponding function header to MathReceiver.hpp.
+Add a parameterUpdated function: Add the following function to MathReceiver.cpp. You will need to add the corresponding function header to MathReceiver.hpp. Note: this function is completely new, there is no stub for this function.
 
 ```cpp
+// In: MathReceiver.cpp
 void MathReceiver ::
    parameterUpdated(FwPrmIdType id)
 {
@@ -131,6 +134,12 @@ void MathReceiver ::
             break;
     }
 }
+```
+
+```cpp
+// In: MathReceiver.hpp
+// As a Private under: Handler implementations for user-defined typed input ports
+void parameterUpdated(FwPrmIdType id);
 ```
 
 This code implements an optional function that, if present, is called when a parameter is updated by command. The parameter identifier is passed in as the id argument of the function. Here we do the following:
