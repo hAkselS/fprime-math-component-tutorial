@@ -6,9 +6,9 @@ F Prime provides a module called STest that provides helper classes and function
 
 Modifying the code: You will need to do the following:
 
-   1. Add #include "STest/Pick/Pick.hpp" to Tester.cpp.
+   1. Add #include ```STest/Pick/Pick.hpp``` to Tester.cpp.
 
-   2. Add the following line to Components/MathSender/CMakeLists.txt, before register_fprime_ut:
+   2. Add the following line to ```Components/MathSender/CMakeLists.txt```, before ```register_fprime_ut```:
 
    ```cmake 
    # In: /MathSender/CMakeLists.txt
