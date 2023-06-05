@@ -50,7 +50,7 @@ fprime-util build
 Now that you have created the component, you can implement the component behavior in the fpp model. Use a text editor to replace the existing MathReceiver.fpp with the following: 
 
 ```fpp
-module Ref {
+module MathModule {
 
   @ Component for receiving and performing a math operation
   queued component MathReceiver {
